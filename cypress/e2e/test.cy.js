@@ -1,12 +1,20 @@
-// cypress/integration/google_spec.js
+describe ('first test suite', function()
+{
+    it ('test case', function() {
 
-describe('Google Page Test', () => {
-    it('Should visit Google homepage', () => {
-      // Visit Google homepage
-      cy.visit('https://www.google.com');
-  
-      // You can add more test commands/assertions here if needed
-      // For example, checking if the search input is present:
-      cy.get('input[name="q"]').should('exist');
-    });
-  });
+cy.visit("https://www.google.com/")
+
+
+    })
+
+    it.only ('test case', function() {
+
+        cy.visit("https://www.google.com/")
+        
+        
+            })
+
+})
+
+
+
