@@ -8,6 +8,16 @@ cy.contains('https://www.saucedemo.com') .click();
 
 }
 )
+it ('go to the truvideo web app', function(){
+cy.visit('https://rc.truvideo.com/');
+
+
+
+
+})
+
+
+
 
 }
 
