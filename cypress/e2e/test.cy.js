@@ -1,6 +1,6 @@
 describe ('Official website' , function(){
 
-it ('search the gmail',function()
+it ('search from google',function()
 {
 cy.visit('https://www.google.com/');
 cy.get ('#APjFqb') .type('Swag Labs{enter}');
