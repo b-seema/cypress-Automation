@@ -17,6 +17,10 @@ cy.wait (2000);
 //cy.get ('.input-large') .eq(0).type('seema')
 cy.get ('input[placeholder="Email/Username"]').first() .type('seema5exceptions@gmail.com');
 cy.get ('input[placeholder="Password"]') .type ('Seema@123') ;
+//cy.get ('input.btn btn-primary btn-block btn-large') .eq(1).click()
+//cy.get('.btn-primary').click();
+// cy.get ('.btn').eq(4) 
+cy.get ('input[value="Log In"]').click();
 })
 
 
