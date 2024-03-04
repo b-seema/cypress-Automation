@@ -20,7 +20,15 @@ cy.get ('input[placeholder="Password"]') .type ('Seema@123') ;
 //cy.get ('input.btn btn-primary btn-block btn-large') .eq(1).click()
 //cy.get('.btn-primary').click();
 // cy.get ('.btn').eq(4) 
-cy.get ('input[value="Log In"]').click();
+//cy.get ('input[value="Log In"]').click();
+//cy.go('back');
+//cy.get('#register-user').should('exist');
+cy.get('#register-user').should('exist').click()
+cy.go('back');
+
+
+
+
 })
 
 
