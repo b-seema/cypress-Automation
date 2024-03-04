@@ -25,6 +25,8 @@ cy.get ('input[placeholder="Password"]') .type ('Seema@123') ;
 //cy.get('#register-user').should('exist');
 cy.get('#register-user').should('exist').click()
 cy.go('back');
+cy.get('#forgot-password').should('exist').click();
+cy.go('back')
 
 
 
