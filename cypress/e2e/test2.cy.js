@@ -15,7 +15,8 @@ cy.wait (2000);
 //cy.xpath ('//input[@name="j_username"]')
 //cy.get('input[placeholder="Email/Username"]') .type ('seema5exceptions@gmail.com')
 //cy.get ('.input-large') .eq(0).type('seema')
-cy.get ('input[autofocus="autofocus"]').first() .type('seems');
+cy.get ('input[placeholder="Email/Username"]').first() .type('seema5exceptions@gmail.com');
+cy.get ('input[placeholder="Password"]') .type ('Seema@123') ;
 })
 
 
