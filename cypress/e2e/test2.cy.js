@@ -29,19 +29,27 @@
        // });
    // });
 describe('testing of checkboxes',function(){
+
+  beforeEach(() => {
+    cy.visit('https://www.ironspider.ca/forms/checkradio.htm')
+  })
+  
+ 
+ 
 it ('select one checkbox', function(){
-cy.visit('https://www.ironspider.ca/forms/checkradio.htm');
+//cy.visit('https://www.ironspider.ca/forms/checkradio.htm');
 cy.get('form').eq(0).scrollIntoView();
 cy.get('input[value="red"]').check().should('be.checked');
 cy.get('input[value="yellow"').check().should('be.checked');
 cy.wait(3000);
 cy.get('input[type="checkbox"]').uncheck();
-
-
-
 })
 
-
+it ('Select all the check boxes at once',function(){
+//cy.visit('https://www.ironspider.ca/forms/checkradio.htm');
+cy.get('input[type="checkbox"]').check(['red','blue','purple']).should('be.checked')
+.and('have.value','red','blue','purple');
+})
 
 
 
