@@ -50,6 +50,19 @@ it ('Select all the check boxes at once',function(){
 cy.get('input[type="checkbox"]').check(['red','blue','purple']).should('be.checked')
 .and('have.value','red','blue','purple');
 })
+})
+
+describe('Automation test for dropdown', function(){
+  beforeEach(() => {
+    cy.visit('https://www.ironspider.ca/forms/dropdowns.htm')
+  })
+
+it('drop down test for selecting single element',function(){
+cy.get('form').eq(0).scrollIntoView();
+
+
+})
+
 
 
 
